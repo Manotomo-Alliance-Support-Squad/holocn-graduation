@@ -6,6 +6,8 @@ import {IconButton} from "@material-ui/core";
 import '../../shared/globalStyles/global.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import ArrowDropDownCircleOutlinedIcon from '@material-ui/icons/ArrowDropDownCircleOutlined';
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 
 import Manotomo1 from '../../assets/sprites/manotomo1.png'
 import Manotomo2 from '../../assets/sprites/manotomo2.png'
@@ -20,10 +22,23 @@ interface HeaderProps
 {
 }
 
+const headerNav = [
+    {
+        link: '/game',
+        text: "Games",
+        icon: <SportsEsportsIcon/>
+    },
+    {
+        link: '/art',
+        text: "Artwork",
+        icon: <PhotoLibraryIcon/>
+    },
+]
+
 const AltNav = () => {
     const location = useLocation();
     if (location.pathname == "/home") {
-        return <InPageNav />;
+        return InPageNav(headerNav);
     }
     return <span />
 };
