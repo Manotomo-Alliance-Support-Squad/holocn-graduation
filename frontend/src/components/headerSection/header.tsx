@@ -24,14 +24,34 @@ interface HeaderProps
 
 const headerNav = [
     {
-        link: '/game',
-        text: "Games",
-        icon: <SportsEsportsIcon/>
+        link: "",
+        text: "",
+        icon: <img src={Manotomo1}/>
     },
     {
-        link: '/art',
-        text: "Artwork",
-        icon: <PhotoLibraryIcon/>
+        link: "",
+        text: "",
+        icon: <img src={Manotomo1}/>
+    },
+    {
+        link: "",
+        text: "",
+        icon: <img src={Manotomo1}/>
+    },
+    {
+        link: "",
+        text: "",
+        icon: <img src={Manotomo1}/>
+    },
+    {
+        link: "",
+        text: "",
+        icon: <img src={Manotomo1}/>
+    },
+    {
+        link: "",
+        text: "",
+        icon: <img src={Manotomo1}/>
     },
 ]
 
