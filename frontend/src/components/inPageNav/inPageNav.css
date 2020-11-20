@@ -7,7 +7,7 @@
     z-index: 1;
 
     box-sizing: border-box;
-    padding: 0 5vw;
+    padding: 0 2vw;
 
     display: flex;
     flex-wrap: wrap;
@@ -16,4 +16,8 @@
 
     font-size: 2.125rem;
     color: white;
+}
+
+.in-page-nav-button {
+    margin: 2vw;
 }
