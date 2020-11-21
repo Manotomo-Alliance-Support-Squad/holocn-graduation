@@ -1,8 +1,6 @@
 import { Button } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import React from 'react'
 
 import './inPageNav.css'
@@ -20,21 +18,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function InPageNav() {
+// TODO: Uses similar style as navbar. Potentially refactor that with the common code here.
+export default function InPageNav(navButtons: Array<Object>) {
     const classes = useStyles();
-
     return (
         <div className="in-page-nav">
-            <NavLink to={"/game"}>
-                <Button variant="contained" startIcon={<SportsEsportsIcon />} size="large" color="primary" className={classes.containedPrimary}>
-                    Games
-                </Button>
-            </NavLink>
-            <NavLink to={"/art"}>
-                <Button variant="contained" startIcon={<PhotoLibraryIcon />} size="large" color="primary" className={classes.containedPrimary}>
-                    Gallery
-                </Button>
-            </NavLink>
+            {navButtons.map((obj, idx) => {
+                return (
+                    <NavLink to={Object(obj)["link"]}>
+                        <Button variant="contained" startIcon={Object(obj)["icon"]} size="large" color="primary" className={classes.containedPrimary}>
+                            {Object(obj)["text"]}
+                        </Button>
+                    </NavLink>
+                );
+            })}
         </div>
     );
 }
