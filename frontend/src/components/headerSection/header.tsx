@@ -28,32 +28,32 @@ interface HeaderProps {
 const headerNav = [
     {
         link: "/home",
-        buttonContent: <img src={yogiri}/>,
+        buttonContent: <img src={yogiri} width="30%"/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={civia}/>,
+        buttonContent: <img src={civia} width="30%"/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={spade_echo}/>,
+        buttonContent: <img src={spade_echo} width="30%"/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={doris}/>,
+        buttonContent: <img src={doris} width="30%"/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={artia}/>,
+        buttonContent: <img src={artia} width="30%"/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={rosalyn}/>,
+        buttonContent: <img src={rosalyn} width="30%"/>,
         startIcon: ""
     },
 ]
