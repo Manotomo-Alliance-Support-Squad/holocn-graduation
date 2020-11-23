@@ -82,9 +82,6 @@ export default class HomePage extends React.Component<HomePageProps, HomePageSta
         return (
             <section id='anchor'>
                 <div className="home-root">
-                    <div className="justify-align-center">
-                        <AnnouncementSection data={this.state.announcements} customSectionStyle="single-column notice-container"/>
-                    </div>
                     {this.renderMessageCardSection()}
                 </div>
             </section>

@@ -27,8 +27,8 @@ export default function InPageNav(navButtons: Array<Object>) {
                 return (
                     <div className="in-page-nav-button">
                         <NavLink to={Object(obj)["link"]}>
-                            <Button variant="contained" startIcon={Object(obj)["icon"]} size="large" color="primary" className={classes.containedPrimary}>
-                                {Object(obj)["text"]}
+                            <Button variant="contained" startIcon={Object(obj)["startIcon"]} size="large" color="primary" className={classes.containedPrimary}>
+                                {Object(obj)["buttonContent"]}
                             </Button>
                         </NavLink>
                     </div>

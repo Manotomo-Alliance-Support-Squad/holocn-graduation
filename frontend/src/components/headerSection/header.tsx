@@ -9,6 +9,13 @@ import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 
 import Manotomo1 from '../../assets/sprites/manotomo1.png'
 import Manotomo2 from '../../assets/sprites/manotomo2.png'
+import yogiri from '../../assets/sprites/yogiri.webp'
+import civia from '../../assets/sprites/civia.webp'
+import spade_echo from '../../assets/sprites/spade_echo.webp'
+import doris from '../../assets/sprites/doris.webp'
+import artia from '../../assets/sprites/artia.webp'
+import rosalyn from '../../assets/sprites/rosalyn.webp'
+
 
 import './header.css'
 
@@ -20,34 +27,34 @@ interface HeaderProps {
 
 const headerNav = [
     {
-        link: "",
-        text: "",
-        icon: <img src={Manotomo2} width="150" height="450"/>
+        link: "/home",
+        buttonContent: <img src={yogiri}/>,
+        startIcon: ""
     },
     {
-        link: "",
-        text: "",
-        icon: <img src={Manotomo2} width="150" height="450"/>
+        link: "/home",
+        buttonContent: <img src={civia}/>,
+        startIcon: ""
     },
     {
-        link: "",
-        text: "",
-        icon: <img src={Manotomo2} width="150" height="450"/>
+        link: "/home",
+        buttonContent: <img src={spade_echo}/>,
+        startIcon: ""
     },
     {
-        link: "",
-        text: "",
-        icon: <img src={Manotomo2} width="150" height="450"/>
+        link: "/home",
+        buttonContent: <img src={doris}/>,
+        startIcon: ""
     },
     {
-        link: "",
-        text: "",
-        icon: <img src={Manotomo2} width="150" height="450"/>
+        link: "/home",
+        buttonContent: <img src={artia}/>,
+        startIcon: ""
     },
     {
-        link: "",
-        text: "",
-        icon: <img src={Manotomo2} width="150" height="450"/>
+        link: "/home",
+        buttonContent: <img src={rosalyn}/>,
+        startIcon: ""
     },
 ]
 
