@@ -7,8 +7,6 @@ import ArrowDropDownCircleOutlinedIcon from '@material-ui/icons/ArrowDropDownCir
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 
-import Manotomo1 from '../../assets/sprites/manotomo1.png'
-import Manotomo2 from '../../assets/sprites/manotomo2.png'
 import yogiri from '../../assets/sprites/yogiri.webp'
 import civia from '../../assets/sprites/civia.webp'
 import spade_echo from '../../assets/sprites/spade_echo.webp'
@@ -28,32 +26,32 @@ interface HeaderProps {
 const headerNav = [
     {
         link: "/home",
-        buttonContent: <img src={yogiri} width="30%"/>,
+        buttonContent: <img src={yogiri}/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={civia} width="30%"/>,
+        buttonContent: <img src={civia}/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={spade_echo} width="30%"/>,
+        buttonContent: <img src={spade_echo}/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={doris} width="30%"/>,
+        buttonContent: <img src={doris}/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={artia} width="30%"/>,
+        buttonContent: <img src={artia}/>,
         startIcon: ""
     },
     {
         link: "/home",
-        buttonContent: <img src={rosalyn} width="30%"/>,
+        buttonContent: <img src={rosalyn}/>,
         startIcon: ""
     },
 ]
