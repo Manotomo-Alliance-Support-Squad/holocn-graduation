@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Route, Switch, Redirect, useLocation } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import ButtonAppBar from './components/navigation/navbar';
 import './App.css';
@@ -18,10 +18,6 @@ interface AppProps {
 }
 
 export default class App extends React.Component<AppProps, LanguageContextValue> {
-
-    constructor(props: AppProps) {
-        super(props);
-    }
 
     state: LanguageContextValue = {
         language: DisplayedLanguage.Original,

@@ -1,6 +1,5 @@
 import React from 'react';
 import MessageSection from '../../components/messageSection/messageSection';
-import ArchiveSection from '../../components/archiveSection/archiveSection';
 import {Message} from "../../models/message";
 import {toCountry} from "../../models/country";
 import ManoAloeService from "../../controllers/mano-aloe.service";

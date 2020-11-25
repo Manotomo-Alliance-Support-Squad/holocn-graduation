@@ -1,7 +1,5 @@
 import React from "react";
-import CSS from 'csstype';
 import classNames from 'classnames';
-import handleViewport from 'react-in-viewport';
 import {Country} from "../../../models/country";
 import {Message} from "../../../models/message";
 import DisplayedLanguage from "../../../models/language";
@@ -42,7 +40,7 @@ export default class MessageCard extends BaseCard<Message, MessageCardProps, Mes
         super(props);
         this.message = props.object;
         this.flag = countryCodeToFlag(props.object.country);
-        this.hasTlMsg = this.message.tl_msg != null && this.message.tl_msg != "";
+        this.hasTlMsg = this.message.tl_msg != null && this.message.tl_msg !== "";
 
         this.toggleCurrentLanguage = this.toggleCurrentLanguage.bind(this);
     }
