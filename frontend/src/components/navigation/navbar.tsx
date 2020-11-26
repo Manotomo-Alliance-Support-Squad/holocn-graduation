@@ -37,7 +37,7 @@ export default function ButtonAppBar() {
                     },
                     {
                         externalLink: true,
-                        link: 'https://github.com/Manotomo-Alliance-Support-Squad/holocn-graduation.git',
+                        link: 'https://github.com/Manotomo-Alliance-Support-Squad/holocn-graduation',
                         altText: "github",
                         iconFunc: () => <InfoIcon/>
                     },
