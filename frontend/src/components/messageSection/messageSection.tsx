@@ -16,10 +16,6 @@ interface MessageSectionState extends BaseSectionState {
 
 export default class MessageSection extends BaseSection<Message> {
 
-    constructor(props: MessageSectionProps) {
-        super(props);
-    }
-
     renderCard(object: Message, cardStyleNum: number, language: DisplayedLanguage, id: number): JSX.Element {
         return (
             <div className="messagecard-center">

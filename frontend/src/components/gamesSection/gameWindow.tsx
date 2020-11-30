@@ -15,14 +15,9 @@ export interface GameWindowState {
 
 export default class GameWindow extends React.Component<GameWindowProps, GameWindowState> {
 
-    constructor(props: GameWindowProps) {
-        super(props);
-    }
-
-
     renderGame(): JSX.Element {
         return (
-            <iframe className="height-width-100" src={linkToString(this.props.gameURL)}/>
+            <iframe className="height-width-100" src={linkToString(this.props.gameURL)} title="Game Window" />
         )
     }
 

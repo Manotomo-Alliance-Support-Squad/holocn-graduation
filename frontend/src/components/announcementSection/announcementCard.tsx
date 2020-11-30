@@ -1,7 +1,5 @@
 import React from "react";
 import {Announcement} from "../../models/announcement";
-import DisplayedLanguage from "../../models/language";
-//import "./messageCard.css";
 import BaseCard, {BaseCardProps, BaseCardState} from "../../shared/components/baseCard/baseCard";
 
 interface AnnouncementCardProps extends BaseCardProps<Announcement> {
