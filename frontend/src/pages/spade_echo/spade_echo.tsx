@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './space_echo.css';
+import './spade_echo.css';
 
 export interface SpadeEchoPageProps {
 }

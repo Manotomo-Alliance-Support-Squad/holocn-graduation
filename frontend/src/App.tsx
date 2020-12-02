@@ -55,7 +55,7 @@ export default class App extends React.Component<AppProps, LanguageContextValue>
                                 <Redirect to="/home" />
                             </Route>
 
-                            <Route path='/yogori' component={YogiriPage}/>
+                            <Route path='/yogiri' component={YogiriPage}/>
                             <Route path='/civia' component={CiviaPage}/>
                             <Route path='/artia' component={ArtiaPage}/>
                             <Route path='/doris' component={DorisPage}/>

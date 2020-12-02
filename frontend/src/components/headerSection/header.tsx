@@ -25,7 +25,7 @@ interface HeaderProps {
 
 const headerNav = [
     {
-        link: "/yogori",
+        link: "/yogiri",
         buttonContent: <img src={yogiri}/>,
         startIcon: ""
     },
