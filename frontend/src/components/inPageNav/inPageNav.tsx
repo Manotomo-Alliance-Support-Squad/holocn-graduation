@@ -26,7 +26,7 @@ export default function InPageNav(navButtons: Array<Object>) {
             {navButtons.map((obj, idx) => {
                 return (
                     <div className="in-page-nav-button">
-                        <NavLink to={Object(obj)["link"]}>
+                        <NavLink to={Object(obj)["link"]} activeClassName="active">
                             <Button variant="contained" startIcon={Object(obj)["startIcon"]} size="large" color="primary" className={classes.containedPrimary}>
                                 {Object(obj)["buttonContent"]}
                             </Button>

@@ -25,43 +25,39 @@ interface HeaderProps {
 
 const headerNav = [
     {
-        link: "/home",
+        link: "/yogiri",
         buttonContent: <img src={yogiri}/>,
         startIcon: ""
     },
     {
-        link: "/home",
+        link: "/civia",
         buttonContent: <img src={civia}/>,
         startIcon: ""
     },
     {
-        link: "/home",
+        link: "/spade_echo",
         buttonContent: <img src={spade_echo}/>,
         startIcon: ""
     },
     {
-        link: "/home",
+        link: "/doris",
         buttonContent: <img src={doris}/>,
         startIcon: ""
     },
     {
-        link: "/home",
+        link: "/artia",
         buttonContent: <img src={artia}/>,
         startIcon: ""
     },
     {
-        link: "/home",
+        link: "/rosalyn",
         buttonContent: <img src={rosalyn}/>,
         startIcon: ""
     },
 ]
 
 const AltNav = () => {
-    const location = useLocation();
-    if (location.pathname === "/home") {
-        return InPageNav(headerNav);
-    }
-    return <span />
+    return InPageNav(headerNav);
 };
 
 export default class HeaderSection extends Component<HeaderProps, HeaderState>

@@ -21,3 +21,7 @@
 .in-page-nav-button {
     margin: 2vw;
 }
+
+.in-page-nav .active button {
+    background-color: #bbbbbb;
+}
