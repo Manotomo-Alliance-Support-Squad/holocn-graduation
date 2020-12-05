@@ -21,6 +21,7 @@ interface HeaderState {
 interface HeaderProps {
 }
 
+// FIXME: Images below hard coded as 300px in inPageNav.css
 const headerNav = [
     {
         link: "/yogiri",
@@ -62,7 +63,6 @@ export default class HeaderSection extends Component<HeaderProps, HeaderState>
                 <header className="App-header">
                     <div style={{height: 100}}/>
                     <InPageNav navButtons={headerNav}/>
-                    <div style={{ height: 50 }} />
                 </header>
                 <div className="separator"/>
             </>

@@ -1,34 +1,43 @@
+/*TODO: need other container rule for screen sizes <1100*/
+
+/*FIXME: Hardcoded in for HoloCN nav buttons*/
+img {
+    width: 300px;
+}
+
+/*Removes border outline when carousel is clicked*/
+*:focus {
+  outline: none !important;
+}
+
 .in-page-nav {
     min-width: 100%;
-
-    /*position: relative;*/
-    top: 0;
-    left: 0;
-    z-index: 1;
+    max-height: 600px;
 
     box-sizing: border-box;
-    padding: 0 2vw;
-
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: center;
+    padding-top: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 
     font-size: 2.125rem;
     color: white;
 }
 
 .slider {
-    /*max-height: 600px;*/
-    max-height: 800px;
+    min-height: 550px;
+    max-width: 100%;
+
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding-top: 5vw;
 }
 
-
 .in-page-nav-button {
-    margin: 3vw;
+    max-width: 250px;
+    margin-left: 12vw;
 }
 
 

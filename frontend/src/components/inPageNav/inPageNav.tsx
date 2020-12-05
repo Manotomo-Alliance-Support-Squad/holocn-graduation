@@ -2,6 +2,8 @@ import { Button } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import React, {Component} from 'react'
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
+import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -40,10 +42,13 @@ export default class InPageNav extends Component<InPageNavProps, InPageNavState>
     // TODO: Uses similar style as navbar. Potentially refactor that with the common code here.
     buildNavRender() : JSX.Element {
         return (
-            <div className="in-page-nav">
-                <CarouselProvider naturalSlideWidth={500} naturalSlideHeight={500} totalSlides={6}>
-                    <ButtonBack>Back</ButtonBack>
-                    <ButtonNext>Next</ButtonNext>
+                <CarouselProvider className="in-page-nav" naturalSlideWidth={50} naturalSlideHeight={50} totalSlides={3}>
+                    <ButtonBack className="buttonBack">
+                        <KeyboardArrowLeftIcon/>
+                    </ButtonBack>
+                    <ButtonNext className="buttonNext">
+                        <KeyboardArrowRightIcon/>
+                    </ButtonNext>
                     <Slider className="slider">
                         {this.navButtons.map((obj, idx) => {
                             return (
@@ -58,7 +63,6 @@ export default class InPageNav extends Component<InPageNavProps, InPageNavState>
                         })}
                     </Slider>
                 </CarouselProvider>
-            </div>
         );
     }
 
