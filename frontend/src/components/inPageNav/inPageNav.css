@@ -1,9 +1,4 @@
-/*TODO: need other container rule for screen sizes <1100*/
-
-/*FIXME: Hardcoded in for HoloCN nav buttons*/
-img {
-    width: 300px;
-}
+/*TODO: need other container rule for screen sizes < 950 in width*/
 
 /*Removes border outline when carousel is clicked*/
 *:focus {
@@ -11,8 +6,8 @@ img {
 }
 
 .in-page-nav {
-    min-width: 100%;
     max-height: 600px;
+    min-width: 100%;
 
     box-sizing: border-box;
     padding-top: 4vw;
@@ -35,7 +30,13 @@ img {
 .in-page-nav-button {
     max-height: 300px;
     max-width: 250px;
-    margin-left: 12vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+/*FIXME: Hardcoded in for HoloCN nav buttons*/
+.in-page-nav-button img {
+    width: 300px;
 }
 
 
