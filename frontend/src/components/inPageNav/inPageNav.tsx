@@ -5,7 +5,7 @@ import React, {Component} from 'react'
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import './inPageNav.css'
@@ -42,7 +42,7 @@ export default class InPageNav extends Component<InPageNavProps, InPageNavState>
     // TODO: Uses similar style as navbar. Potentially refactor that with the common code here.
     buildNavRender() : JSX.Element {
         return (
-                <CarouselProvider className="in-page-nav" naturalSlideWidth={50} naturalSlideHeight={50} totalSlides={3}>
+                <CarouselProvider className="in-page-nav" naturalSlideWidth={300} naturalSlideHeight={300} visibleSlides={2} totalSlides={6}>
                     <ButtonBack className="buttonBack">
                         <KeyboardArrowLeftIcon/>
                     </ButtonBack>

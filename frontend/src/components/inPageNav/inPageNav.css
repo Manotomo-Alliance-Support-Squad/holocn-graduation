@@ -25,34 +25,32 @@ img {
 
 .slider {
     min-height: 550px;
-    max-width: 100%;
+    min-width: 100%;
 
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     padding-top: 5vw;
 }
 
 .in-page-nav-button {
+    max-height: 300px;
     max-width: 250px;
     margin-left: 12vw;
 }
 
 
 .buttonBack {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .buttonNext {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
 .in-page-nav .active button {
