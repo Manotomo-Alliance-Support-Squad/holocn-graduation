@@ -5,7 +5,7 @@ import React, {Component} from 'react'
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import './inPageNav.css'
@@ -52,7 +52,7 @@ export default class InPageNav extends Component<InPageNavProps, InPageNavState>
                     <Slider className="slider">
                         {this.navButtons.map((obj, idx) => {
                             return (
-                                <Slide index={idx} className="in-page-nav-button">
+                                <Slide key={idx} index={idx} className="in-page-nav-button">
                                         <NavLink to={Object(obj)["link"]}>
                                             <NavButton variant="contained" startIcon={Object(obj)["startIcon"]} size="large" color="primary">
                                                 {Object(obj)["buttonContent"]}
