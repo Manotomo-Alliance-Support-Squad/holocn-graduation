@@ -4,8 +4,6 @@ import InPageNav from '../inPageNav/inPageNav';
 import '../../shared/globalStyles/global.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import ArrowDropDownCircleOutlinedIcon from '@material-ui/icons/ArrowDropDownCircleOutlined';
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 
 import yogiri from '../../assets/sprites/yogiri.webp'
 import civia from '../../assets/sprites/civia.webp'
@@ -23,6 +21,7 @@ interface HeaderState {
 interface HeaderProps {
 }
 
+// FIXME: Images below hard coded as 300px in inPageNav.css
 const headerNav = [
     {
         link: "/yogiri",
@@ -56,10 +55,6 @@ const headerNav = [
     },
 ]
 
-const AltNav = () => {
-    return InPageNav(headerNav);
-};
-
 export default class HeaderSection extends Component<HeaderProps, HeaderState>
 {
     renderDefaultSection(): JSX.Element {
@@ -67,8 +62,7 @@ export default class HeaderSection extends Component<HeaderProps, HeaderState>
             <>
                 <header className="App-header">
                     <div style={{height: 100}}/>
-                    <AltNav />
-                    <div style={{ height: 50 }} />
+                    <InPageNav navButtons={headerNav}/>
                 </header>
                 <div className="separator"/>
             </>

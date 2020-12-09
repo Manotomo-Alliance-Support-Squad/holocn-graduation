@@ -1,25 +1,57 @@
-.in-page-nav {
-    min-width: 50vw;
+/*TODO: need other container rule for screen sizes < 950 in width*/
 
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
+/*Removes border outline when carousel is clicked*/
+*:focus {
+  outline: none !important;
+}
+
+.in-page-nav {
+    max-height: 600px;
+    min-width: 100%;
 
     box-sizing: border-box;
-    padding: 0 2vw;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    padding-top: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 
     font-size: 2.125rem;
     color: white;
 }
 
+.slider {
+    min-height: 550px;
+    min-width: 100%;
+
+    justify-content: space-between;
+
+    padding-top: 5vw;
+}
+
 .in-page-nav-button {
-    margin: 2vw;
+    max-height: 300px;
+    max-width: 250px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/*FIXME: Hardcoded in for HoloCN nav buttons*/
+.in-page-nav-button img {
+    width: 300px;
+}
+
+
+.buttonBack {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.buttonNext {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
 .in-page-nav .active button {
