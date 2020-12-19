@@ -42,7 +42,7 @@ export default class InPageNav extends Component<InPageNavProps, InPageNavState>
     // TODO: Uses similar style as navbar. Potentially refactor that with the common code here.
     buildNavRender() : JSX.Element {
         return (
-                <CarouselProvider className="in-page-nav" naturalSlideWidth={200} naturalSlideHeight={300} visibleSlides={2} totalSlides={5} infinite>
+                <CarouselProvider className="in-page-nav" naturalSlideWidth={100} naturalSlideHeight={70} visibleSlides={2} totalSlides={5} infinite>
                     <ButtonBack className="buttonBack">
                         <KeyboardArrowLeftIcon/>
                     </ButtonBack>
