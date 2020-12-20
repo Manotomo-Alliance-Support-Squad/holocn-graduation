@@ -3,8 +3,6 @@ import {NavLink} from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import Logo from '../../assets/icons/AloeHeartIcon.png'
 import LanguageSwitchButton from '../languageSwitch/languageSwitch';
 
@@ -22,18 +20,6 @@ export default function ButtonAppBar() {
                         link: '/home',
                         altText: "Home",
                         iconFunc: () => <HomeIcon/>
-                    },
-                    {
-                        externalLink: false,
-                        link: '/game',
-                        altText: "Games",
-                        iconFunc: () => <SportsEsportsIcon/>
-                    },
-                    {
-                        externalLink: false,
-                        link: '/art',
-                        altText: "Artwork",
-                        iconFunc: () => <PhotoLibraryIcon/>
                     },
                     {
                         externalLink: true,

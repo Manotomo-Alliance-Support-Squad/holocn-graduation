@@ -2,15 +2,18 @@ import { Button } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import React, {Component} from 'react'
-import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
-import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import YogiriPage from '../../pages/yogiri/yogiri';
+import CiviaPage from '../../pages/civia/civia';
+import ArtiaPage from '../../pages/artia/artia';
+import DorisPage from '../../pages/doris/doris';
+import RosalynPage from '../../pages/rosalyn/rosalyn';
+import SpadeEchoPage from '../../pages/spade_echo/spade_echo';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 import './inPageNav.css'
-import '../../shared/globalStyles/global.css'
-
 
 interface InPageNavState{
 }
@@ -29,7 +32,6 @@ const NavButton = withStyles({
       },
 })(Button);
 
-
 export default class InPageNav extends Component<InPageNavProps, InPageNavState>{
     navButtons: Array<Object>;
 
@@ -42,27 +44,19 @@ export default class InPageNav extends Component<InPageNavProps, InPageNavState>
     // TODO: Uses similar style as navbar. Potentially refactor that with the common code here.
     buildNavRender() : JSX.Element {
         return (
-                <CarouselProvider className="in-page-nav" naturalSlideWidth={100} naturalSlideHeight={70} visibleSlides={2} totalSlides={5} infinite>
-                    <ButtonBack className="buttonBack">
-                        <KeyboardArrowLeftIcon/>
-                    </ButtonBack>
-                    <ButtonNext className="buttonNext">
-                        <KeyboardArrowRightIcon/>
-                    </ButtonNext>
-                    <Slider className="slider">
-                        {this.navButtons.map((obj, idx) => {
-                            return (
-                                <Slide key={idx} index={idx} className="in-page-nav-button">
-                                        <NavLink to={Object(obj)["link"]}>
-                                            <NavButton variant="contained" startIcon={Object(obj)["startIcon"]} size="large" color="primary">
-                                                {Object(obj)["buttonContent"]}
-                                            </NavButton>
-                                        </NavLink>
-                                </Slide>
-                            );
-                        })}
-                    </Slider>
-                </CarouselProvider>
+                <Carousel className="w-100">
+                    {this.navButtons.map((obj, idx) => {
+                        return (
+                            <Carousel.Item>
+                                {Object(obj)["buttonContent"]}
+                                <div className="separator"/>
+                                <div className="carousel-text">
+                                    {Object(obj)["page"]}
+                                </div>
+                            </Carousel.Item>
+                        );
+                    })}
+                </Carousel>
         );
     }
 
