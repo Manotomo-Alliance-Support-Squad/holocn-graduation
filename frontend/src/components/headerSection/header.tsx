@@ -72,7 +72,7 @@ export default class HeaderSection extends Component<HeaderProps, HeaderState>
         return (
             <>
                 <header className="App-header">
-                    <div style={{height: 100}}/>
+                    <div style={{height: 50}}/>
                     <InPageNav navButtons={headerNav}/>
                 </header>
             </>
