@@ -6,11 +6,12 @@
 }
 
 .in-page-nav {
+    position: absolute;
     max-height: 400px;
     min-width: 100%;
 
     box-sizing: border-box;
-    padding-top: 4vw;
+    padding-top: 50px;
     padding-left: 4vw;
     padding-right: 4vw;
 
