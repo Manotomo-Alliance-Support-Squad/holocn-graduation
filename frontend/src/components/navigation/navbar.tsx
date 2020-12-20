@@ -3,16 +3,13 @@ import {NavLink} from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
-import Logo from '../../assets/icons/AloeHeartIcon.png'
-import LanguageSwitchButton from '../languageSwitch/languageSwitch';
 
 import './navbar.css';
 
 export default function ButtonAppBar() {
     return (
         <header className="navbar">
-            <img className="icon-button" src={Logo} alt="aloe heart logo"/>
-            <div className="title">魔の友から、アロエちゃんへ</div>
+            <div className="title">We Love Our Girls</div>
             <div className="icons">
                 {[
                     {
@@ -48,7 +45,6 @@ export default function ButtonAppBar() {
                         );
                     }
                 })}
-                <LanguageSwitchButton/>
             </div>
         </header>
     );
