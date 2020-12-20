@@ -18,8 +18,8 @@ export default class ArtiaPage extends React.Component<ArtiaPageProps, ArtiaPage
                 </p>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <p>
-                But, really, we already miss your poggers moments and memes. Who can forget your
-                <a href="https://twitter.com/Kontaruu/status/1235886034824638465">Pepelaugh</a>,
+                But, really, we already miss your poggers moments and memes. Who can forget
+                your <a href="https://twitter.com/Kontaruu/status/1235886034824638465">Pepelaugh</a>,
                 your elaborate puzzles, your many 12+ hours 耐久 streams...
                 </p>
                 <p>
