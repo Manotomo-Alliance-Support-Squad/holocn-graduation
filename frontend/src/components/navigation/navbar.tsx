@@ -1,7 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
-import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 
 import './navbar.css';
@@ -9,15 +8,9 @@ import './navbar.css';
 export default function ButtonAppBar() {
     return (
         <header className="navbar">
-            <div className="title">We Love Our Girls</div>
+            <div className="title">谢谢, HololiveCN</div>
             <div className="icons">
                 {[
-                    {
-                        externalLink: false,
-                        link: '/home',
-                        altText: "Home",
-                        iconFunc: () => <HomeIcon/>
-                    },
                     {
                         externalLink: true,
                         link: 'https://github.com/Manotomo-Alliance-Support-Squad/holocn-graduation',
