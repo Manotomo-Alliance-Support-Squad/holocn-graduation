@@ -30,37 +30,37 @@ interface HeaderProps {
 const headerNav = [
     {
         link: "/yogiri",
-        buttonContent: <img src={yogiri}/>,
+        buttonContent: <div className="slide-content"><img src={yogiri}/>Yogiri</div>,
         page: <YogiriPage/>,
         startIcon: ""
     },
     {
         link: "/civia",
-        buttonContent: <img src={civia}/>,
+        buttonContent: <div className="slide-content"><img src={civia}/>Civia</div>,
         page: <CiviaPage/>,
         startIcon: ""
     },
     {
         link: "/spade_echo",
-        buttonContent: <img src={spade_echo}/>,
+        buttonContent: <div className="slide-content"><img src={spade_echo}/>Spade Echo</div>,
         page: <SpadeEchoPage/>,
         startIcon: ""
     },
     {
         link: "/doris",
-        buttonContent: <img src={doris}/>,
+        buttonContent: <div className="slide-content"><img src={doris}/>Doris</div>,
         page: <DorisPage/>,
         startIcon: ""
     },
     {
         link: "/artia",
-        buttonContent: <img src={artia}/>,
+        buttonContent: <div className="slide-content"><img src={artia}/>Artia</div>,
         page: <ArtiaPage/>,
         startIcon: ""
     },
     {
         link: "/rosalyn",
-        buttonContent: <img src={rosalyn}/>,
+        buttonContent: <div className="slide-content"><img src={rosalyn}/>Rosalyn</div>,
         page: <RosalynPage/>,
         startIcon: ""
     },
