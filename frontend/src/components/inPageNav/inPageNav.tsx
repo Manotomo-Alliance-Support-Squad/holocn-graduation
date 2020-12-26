@@ -49,7 +49,6 @@ export default class InPageNav extends Component<InPageNavProps, InPageNavState>
                         return (
                             <Carousel.Item>
                                 {Object(obj)["buttonContent"]}
-                                <div className="separator"/>
                                 <div className="carousel-text">
                                     {Object(obj)["page"]}
                                 </div>
