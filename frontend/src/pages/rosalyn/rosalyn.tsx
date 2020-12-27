@@ -24,6 +24,16 @@ export default class RosalynPage extends React.Component<RosalynPageProps, Rosal
                 Whether you’re off somewhere playing cards, or going back to your library to whip things
                 back to shap, we’re here supporting you!
                 </p>
+                <br/><hr/><br/>
+                <p>
+                館長，你唱<a href="https://www.bilibili.com/video/BV1zi4y1b7Sz">【this game】</a>的那一会，我们听到你的歌声，真很惊讶 - 必尽我们都等着蘑菇人出现。
+                我们一直都很爱支持你，看之你从麦克风爆炸事故恢复，从强强电脑电源的事故恢复，从OBS事故恢复，
+                或者和你一起玩Hearthstone和Shadowverse都是美好的时光。
+                </p>
+
+                <p>
+                不管你是去哪里，打牌，或者回图书馆收拾，我们一直会在这了支持你。
+                </p>
             </div>
         );
     }
