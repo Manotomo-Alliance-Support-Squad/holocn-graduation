@@ -30,37 +30,37 @@ interface HeaderProps {
 const headerNav = [
     {
         link: "/yogiri",
-        buttonContent: <div className="slide-content"><img src={yogiri}/>Yogiri</div>,
+        buttonContent: <div className="slide-content"><img src="https://u.cubeupload.com/zapple/yogiri.jpg"/>Yogiri</div>,
         page: <YogiriPage/>,
         startIcon: ""
     },
     {
         link: "/civia",
-        buttonContent: <div className="slide-content"><img src={civia}/>Civia</div>,
+        buttonContent: <div className="slide-content"><img src="https://u.cubeupload.com/zapple/civia.jpg"/>Civia</div>,
         page: <CiviaPage/>,
         startIcon: ""
     },
     {
         link: "/spade_echo",
-        buttonContent: <div className="slide-content"><img src={spade_echo}/>Spade Echo</div>,
+        buttonContent: <div className="slide-content"><img src="https://u.cubeupload.com/zapple/spadeecho.jpg"/>Spade Echo</div>,
         page: <SpadeEchoPage/>,
         startIcon: ""
     },
     {
         link: "/doris",
-        buttonContent: <div className="slide-content"><img src={doris}/>Doris</div>,
+        buttonContent: <div className="slide-content"><img src="https://u.cubeupload.com/zapple/doris.jpg"/>Doris</div>,
         page: <DorisPage/>,
         startIcon: ""
     },
     {
         link: "/artia",
-        buttonContent: <div className="slide-content"><img src={artia}/>Artia</div>,
+        buttonContent: <div className="slide-content"><img src="https://u.cubeupload.com/zapple/artia.jpg"/>Artia</div>,
         page: <ArtiaPage/>,
         startIcon: ""
     },
     {
         link: "/rosalyn",
-        buttonContent: <div className="slide-content"><img src={rosalyn}/>Rosalyn</div>,
+        buttonContent: <div className="slide-content"><img src="https://u.cubeupload.com/zapple/rosalyn.jpg"/>Rosalyn</div>,
         page: <RosalynPage/>,
         startIcon: ""
     },
